@@ -20,8 +20,7 @@ const numberOfBooksRead = () => {
   // write your code her
 	let count=0;
 	for(let i=0;i<library.length;i++) {
-		if(library[i].readingStatus===true){
-			count++;
+		if(library[i].readingStatus && count++){
 		}
 	}
 	return count;
